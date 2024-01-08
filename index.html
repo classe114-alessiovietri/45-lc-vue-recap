@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>45 LC Vue Recap</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            Header
+        </header>
+
+        <main>
+            <div id="app">
+            
+                <h1 class="classe-statica" v-bind:class="h1Classes">
+                    {{ h1Content }} {{ h1ContentDue }}
+                </h1>
+
+                <div>
+                    <img :src="imgSrcValue()">
+                </div>
+    
+                <div>
+                    <input type="text" v-model="catImg" placeholder="Inserisci il tuo nome">
+    
+                    <button @click="handleButtonClick()">
+                        Cliccami
+                    </button>
+                </div>
+    
+            </div>
+        </main>
+
+        <footer>
+            Footer
+        </footer>
+
+        <!-- JS -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>
